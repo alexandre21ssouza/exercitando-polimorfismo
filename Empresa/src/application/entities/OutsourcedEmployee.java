@@ -34,9 +34,15 @@ public class OutsourcedEmployee extends Employee {
 		this.additionalCharge = additionalCharge;
 	}
 	
+	
+	/*
+	 * Pagamento de terceirizado com adicional * 110%
+	 * com sobreposição de método(@Override)
+	 */
 	@Override
-	public void payment(Double pg) {
-		 super.payment(pg);
-		 
+	public Double payment() {
+		 return super.payment() + additionalCharge * 1.1;
 	}
+		 		 
+	
 }
