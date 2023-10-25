@@ -54,8 +54,12 @@ public class Employee {
 	}
 	
 	
-	//Pagamento
-	public void payment(Double pg) {
-		 pg = valuePerHour * hours ;
+	/*
+	 * Pagamento sem adicional
+	 */
+	
+	public Double payment() {
+		 return valuePerHour * hours;
 	}
+	
 }
