@@ -42,11 +42,9 @@ public class Program {
 			System.out.print("Addtional charge: ");
 			Double Add = sc.nextDouble();
 			
-			
-			Employee employee = new OutsourcedEmployee(name, hour,
-					valuerPerhour, Add);
-			
-			list.add(employee);
+									
+			list.add(new OutsourcedEmployee(name, hour,
+					valuerPerhour, Add));
 
 		} else {
 
@@ -59,9 +57,8 @@ public class Program {
 			System.out.print("Value per hour: ");
 			Double valuerPerhour = sc.nextDouble();
 			
-			Employee employee = new Employee(name, hour, valuerPerhour);
-			
-			list.add(employee);
+					
+			list.add(new Employee(name, hour, valuerPerhour));
 				
 			}
 		}
